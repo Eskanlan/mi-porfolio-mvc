@@ -6,6 +6,9 @@ app.use(express.static(path.resolve(__dirname, "./public")));
 
 app.use("/", rutasHome);
 
+
 app.listen(3000, () => {
   console.log("Servidor funcionando");
 });
+
+console.log(path.resolve(__dirname, "./public"));
